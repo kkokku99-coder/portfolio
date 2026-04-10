@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=800px">
+	<title>guide</title>
+	<!-- Font -->
+	<link rel="stylesheet" as="style" crossorigin
+		href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-face.css" />
+	<link rel="stylesheet" as="style" crossorigin
+		href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-family.css" />
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="title">
+			<h2>LiFOA EVENT BANNER</h2>
+			<p>
+				카카오 비지니스 배너 형식으로 제작한 리포아 이벤트 배너입니다.
+			</p>
+		</div>
+		<div id="cardnews_wrap">
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/1.event_banner.jpg" alt="event_banner">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/2. event_banner.jpg" alt="event_banner">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/3. event_banner.jpg" alt="event_banner">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/4. event_banner.jpg" alt="event_banner">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="fixed2">
+			<a href="../index.html#projects" onclick="window.close()"><img src="images/back.png" alt="back"></a>
+		</div>
+	</div>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			grabCursor: true,
+			effect: "creative",
+			creativeEffect: {
+				prev: {
+					shadow: true,
+					translate: [0, 0, -400],
+				},
+				next: {
+					translate: ["100%", 0, 0],
+				},
+			},
+		});
+	</script>
+
+</body>
+
+</html>
